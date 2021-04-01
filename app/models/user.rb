@@ -4,13 +4,19 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :trackable
 
+  validates :first_name, :last_name, presence: true
+
   before_create :default_role
-  
+
   def default_role
     self.role = 'guest'
   end
 
   def name
-    "#{first_name} #{last_name}".strip
+    "#{first_name} #{last_name}".strip.titleize
+  end
+
+  def admin?
+    role == 'admin'
   end
 end
