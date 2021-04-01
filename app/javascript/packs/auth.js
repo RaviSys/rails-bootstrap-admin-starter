@@ -17,3 +17,5 @@ import $ from 'jquery';
 global.$ = jQuery;
 
 import "bootstrap";
+import "./plugins/jquery.easing";
+import "./plugins/sb-admin-2";
