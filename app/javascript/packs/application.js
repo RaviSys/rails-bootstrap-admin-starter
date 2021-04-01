@@ -17,3 +17,8 @@ import $ from 'jquery';
 global.$ = jQuery;
 
 import "bootstrap";
+import "./plugins/jquery.easing";
+import "./plugins/Chart.min";
+import "./plugins/sb-admin-2";
+import "./plugins/chart-area-demo";
+import "./plugins/chart-pie-demo";
