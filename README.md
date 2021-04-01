@@ -2,7 +2,7 @@
 
 This is a startup rails 6 application/boilerplate where you can find an integrated free bootstrap admin theme(SB-Admin-2). This is a very simple and basic theme but quite useful and attractive. This starter app consists of few important gems like devise, letter_opener, pg. You don't have to write everything from scratch, you can simply clone this app and start building your main features on it. 
 
-This starter app will definitely save your time from setting up an admin theme from scratch and will be very useful in apps where you will be required to manage backend(admin) things. However this is just an example and freely available theme has been integrated, but this will give you an idea of how you can integrate other Bootstrap admin themes witjh Rai;s 6 and webpacker apps. 
+This starter app will definitely save your time from setting up an admin theme from scratch and will be very useful in apps where you will be required to manage backend(admin) things. However this is just an example and freely available theme has been integrated, but this will give you an idea of how you can integrate other Bootstrap admin themes with Rails 6 and webpacker apps. 
 
 You will find following items in this startup rails application:
 

@@ -9,7 +9,9 @@ class User < ApplicationRecord
   before_create :default_role
 
   def default_role
-    self.role = 'guest'
+    unless role.present?
+      role = 'guest'
+    end
   end
 
   def name
