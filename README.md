@@ -10,7 +10,7 @@ You will find following items in this startup rails application:
 * Font Awesome 5 integrated using webpacker
 * Devise implemented with customised bootstrap forms for sessions, registrations and passwords
 * Letter opener implemented to test out the emails at locals
-* Bootstrap SB-Admin-2 Theme integrated for admin interface to manage backend, you can implement further features as per your need to save your time in integrating a basic admin theme
+* Bootstrap [Start Bootstrap - SB Admin 2](https://startbootstrap.com/theme/sb-admin-2/) Theme integrated for admin interface to manage backend, you can implement further features as per your need to save your time in integrating a basic admin theme
 
 ## Development Setup
 
@@ -63,4 +63,21 @@ email: guest@example.com
 password: password
 ```
 
+## Update background images on auth pages
+
+For now as starter app I have used the default images provided by SB-Admin-2 Bootstrap theme. However if you want to change those background images on sign-in, register, forget password and change password pages this then you must make your changes at this file:
+
+```sh
+app/javascript/css/plugins/scss/_variables.scss
+```
+and you need to change the following variables:
+
+```scss
+$login-image
+$register-image
+$password-image
+```
+
 Cheers!!
+
+For more helpful and time saving work samples visit us at: [https://ai-academy.herokuapp.com](https://ai-academy.herokuapp.com/).
