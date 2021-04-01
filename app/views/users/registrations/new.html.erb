@@ -28,7 +28,7 @@
                 <%= f.password_field :password, autocomplete: "new-password", class: "form-control form-control-user", placeholder: "Password" %>
               </div>
               <div class="col-sm-6">
-                <%= f.password_field :password, autocomplete: "new-password", class: "form-control form-control-user", placeholder: "Confirm Password" %>
+                <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control form-control-user", placeholder: "Confirm Password" %>
               </div>
             </div>
 
@@ -44,7 +44,7 @@
           <% end %>
           <hr>
           <div class="text-center">
-            <a class="small" href="forgot-password.html">Forgot Password?</a>
+            <%= link_to "Forgot Password?", new_password_path(resource_name), class: "small" %>
           </div>
           <div class="text-center">
             <%= link_to "Already have an account? Login!", new_session_path(resource_name), class: "small" %>
